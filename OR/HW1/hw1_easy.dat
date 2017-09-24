@@ -1,0 +1,17 @@
+set v:= VEG1 VEG2;
+set o:= OIL1 OIL2 OIL3;
+
+param v_c:= VEG1 110
+		  	VEG2 120;
+		  
+param o_c:= OIL1 130
+		  	OIL2 110
+		  	OIL3 115;
+
+param v_h:= VEG1 8.8
+		  	VEG2 6.1;
+		  
+param o_h:= OIL1 2.0
+		  	OIL2 4.2
+		  	OIL3 5.0;
+

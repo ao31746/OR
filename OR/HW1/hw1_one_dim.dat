@@ -1,0 +1,13 @@
+set P:= VEG OIL;
+
+param n:=3;
+param t:= VEG 200
+		  OIL 250;
+
+param c: 1 2 3  :=
+	 VEG 110 120 500
+	 OIL 130 110 115; 
+
+param h: 1 2 3  :=
+	 VEG 8.8 6.1 500
+	 OIL 2.0 4.2 5.0;

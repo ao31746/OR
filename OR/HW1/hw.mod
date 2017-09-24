@@ -5,7 +5,7 @@ param c{i in P, A[i]};
 param h{i in P, A[i]};
 param t{P};
 
-var x{i in P, A[i]};
+var x{i in P, A[i]}; #how many oil to produce
 var y;
 
 maximize Profit:

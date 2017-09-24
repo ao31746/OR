@@ -1,17 +1,17 @@
-set P:= VEG OIL;
-set A[OIL]:= OIL1 OIL2 OIL3;
-set A[VEG]:= VEG1 VEG2;
+set P:= VEG OIL; #category of vegetable and non-vegetable
+set A[OIL]:= OIL1 OIL2 OIL3; #non-vegetable oils
+set A[VEG]:= VEG1 VEG2; #vegetable oils
 
-param t:= VEG 200
+param t:= VEG 200 # production limit
 		  OIL 250;	  
-param: c :=
+param: c := #cost
 	 	VEG VEG1 110
 	 	VEG VEG2 120 
 	 	OIL OIL1 130
 	 	OIL OIL2 110 
 	 	OIL OIL3 115; 
 
-param: h :=
+param: h := #hard
 		VEG VEG1 8.8
 		VEG VEG2 6.1
 		OIL OIL1 2.0

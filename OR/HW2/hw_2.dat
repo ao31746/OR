@@ -1,0 +1,32 @@
+set P:= PROD1 PROD2 PROD3 PROD4 PROD5 PROD6 PROD7; #product sets
+set M:= GR VE HO BO PL;
+
+param s:=0.5;	# storage cost
+param t:=6;	# 6 months
+param pr:= P
+		10 6 3 4 5 6 7;
+param ul defalut 0;
+param ul :=
+		1 GR 1
+		2 HO 2
+		3 BO 1
+		4 VE 1
+		5 GR 1
+		5 VE 1
+		6 PL 1
+		6 HO 1
+
+
+	
+
+param l:= VEG 200 # production limit
+		  OIL 250;	  
+param: h := #hard
+		VEG VEG1 8.8
+		VEG VEG2 6.1
+		OIL OIL1 2.0
+		OIL OIL2 4.2
+		OIL OIL3 5.0;
+
+
+		

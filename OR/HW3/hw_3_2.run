@@ -1,0 +1,7 @@
+reset;
+model 'C:\Users\lckung\Desktop\OR\OR\HW3\hw_3_2.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW3\hw_3_2.dat';
+solve;
+display A;
+display B;
+display C;

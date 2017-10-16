@@ -1,4 +1,5 @@
 reset;
+option solver minos;
 model 'C:\Users\lckung\Desktop\OR\OR\HW3\hw_3_1.mod';
 data 'C:\Users\lckung\Desktop\OR\OR\HW3\hw_3_1.dat';
 solve;

@@ -1,0 +1,10 @@
+reset;
+option solver gurobi;
+model 'C:\Users\lckung\Desktop\OR\OR\HW4\hw_1.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW4\hw_1.dat';
+solve;
+display X;
+#display {s in STU} sum{p in PRO}pref[s,p]*X[s,p];
+#{s in STU, p in PRO: pref[s,p]*X[s,p] = 2}
+
+display card({s in STU, p in PRO: pref[s,p]*X[s,p] = 2} union {s in STU, p in PRO: pref[s,p]*X[s,p] = 3});

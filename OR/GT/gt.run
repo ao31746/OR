@@ -1,0 +1,6 @@
+reset;
+option solver minos;
+model 'C:\Users\lckung\Desktop\OR\OR\GT\gt.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\GT\gt.dat';
+solve;
+display X;

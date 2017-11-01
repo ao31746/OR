@@ -1,0 +1,8 @@
+reset;
+option solver gurobi;
+model 'C:\Users\lckung\Desktop\OR\OR\HW4\hw_2.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW4\hw_2.dat';
+solve;
+display F_D;
+display D_C;
+display F_C;

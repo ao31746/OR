@@ -1,0 +1,6 @@
+reset;
+option solver gurobi;
+model 'C:\Users\lckung\Desktop\OR\OR\HW5\hw_1.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW5\hw_1.dat';
+solve;
+display X;

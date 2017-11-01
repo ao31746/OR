@@ -1,0 +1,67 @@
+set nodes := n1 n2 n3 n4;
+set arcs  := a1 a2 a3 a4 a5;
+set p[n1, n2] :=
+1 2 3;
+
+set p[n3, n2] :=
+1 2;
+
+#set links := 
+#n1 n2
+#n3 n2
+#n1 n3
+#n3 n4
+#n4 n2;
+
+set od := 
+n1 n2
+n3 n2;
+
+set routes[n1, n2] := #arc
+1 a1 # f1 4 1 
+2 a3 a2
+3 a4 a5;
+
+set routes[n3, n2]:=
+1 a2
+2 a4 a5;
+
+param qrs:=
+n1 n2 2 
+n3 n2 2;
+
+param dig:=
+a1 1
+a2 2
+a3 3
+a4 4
+a5 5;
+
+param delta :=
+n1	n2	1  	a1 	1
+n1	n2	1  	a2 	0
+n1	n2	1  	a3 	0
+n1	n2	1  	a4 	0
+n1	n2	1  	a5 	0
+n1	n2	2  	a1 	0
+n1	n2	2  	a2 	1
+n1	n2	2  	a3 	1
+n1	n2	2  	a4 	0
+n1	n2	2  	a5 	0
+n1	n2	3  	a1 	0
+n1	n2	3  	a2 	0
+n1	n2	3  	a3 	1
+n1	n2	3  	a4 	1
+n1	n2	3  	a5 	1
+n3	n2	1  	a1 	0
+n3	n2	1  	a2 	1
+n3	n2	1  	a3 	0
+n3	n2	1  	a4 	0
+n3	n2	1  	a5 	0
+n3	n2	2  	a1 	0
+n3	n2	2  	a2 	0
+n3	n2	2  	a3 	0
+n3	n2	2  	a4 	1
+n3	n2	2  	a5 	1;
+
+

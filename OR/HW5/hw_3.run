@@ -1,0 +1,11 @@
+reset;
+option solver gurobi;
+model 'C:\Users\lckung\Desktop\OR\OR\HW4\hw_3.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW4\hw_3.dat';
+solve;
+#display F_D;
+#display D_C;
+#display F_C;
+display sum{(i, j) in F_D_LINKS} (f_d_cost[i, j] * F_D[i, j]) +
+	sum{(j, k) in D_C_LINKS} (d_c_cost[j, k] * D_C[j, k]) +
+	sum{(i, k) in F_C_LINKS} (f_c_cost[i, k] * F_C[i, k]);

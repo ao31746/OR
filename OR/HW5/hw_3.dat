@@ -1,0 +1,68 @@
+set F_NODES := Liverpool_factory	Brighton_factory;
+set D_NODES := Newcastle_depot	Birmingham_depot London_depot	Exeter_depot;
+set C_NODES:= C_1	C_2	C_3	C_4	C_5	C_6	;
+set pref_f :=
+Liverpool_factory C_1 ;
+
+set pref_d :=
+Newcastle_depot 	C_2 
+Birmingham_depot 	C_5 
+Exeter_depot 		C_6 
+London_depot		C_6 ;
+
+param weight = 1.1;
+
+
+param: F_D_LINKS: f_d_cost :=
+Liverpool_factory	Newcastle_depot		0.5
+Liverpool_factory	Birmingham_depot	0.5
+Liverpool_factory	London_depot		1
+Liverpool_factory	Exeter_depot		0.2
+Brighton_factory	Birmingham_depot	0.3
+Brighton_factory	London_depot		0.5
+Brighton_factory	Exeter_depot		0.2;
+
+param: D_C_LINKS: d_c_cost :=
+Newcastle_depot		C_2	1.5
+Newcastle_depot		C_3	0.5
+Newcastle_depot		C_4	1.5
+Newcastle_depot		C_6	1
+Birmingham_depot	C_1	1
+Birmingham_depot	C_2	0.5
+Birmingham_depot	C_3	0.5
+Birmingham_depot	C_4	1
+Birmingham_depot	C_5	0.5
+London_depot		C_2	1.5
+London_depot		C_3	2
+London_depot		C_5	0.5
+London_depot		C_6	1.5
+Exeter_depot		C_3	0.2
+Exeter_depot		C_4	1.5
+Exeter_depot		C_5	0.5
+Exeter_depot		C_6	1.5;
+
+param: F_C_LINKS: f_c_cost:=
+Liverpool_factory	C_1	1
+Liverpool_factory	C_3	1.5
+Liverpool_factory	C_4	2
+Liverpool_factory	C_6	1
+Brighton_factory	C_1	2;
+
+param capacity:=
+Liverpool_factory	150000
+Brighton_factory	200000;
+
+param throughtput:=
+Newcastle_depot		70000
+Birmingham_depot	50000
+London_depot		100000
+Exeter_depot		40000;
+
+param req:=
+C_1	50000
+C_2	10000
+C_3	40000
+C_4	35000
+C_5	60000
+C_6	20000;
+

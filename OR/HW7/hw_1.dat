@@ -1,0 +1,37 @@
+set nodes := n1 n2 n3 n4;
+set arcs :=
+	n1 n2
+	n1 n3
+	n2 n3
+	n2 n4 
+	n3 n4;
+set des   := n2 n3 n4;
+	
+param qs:=
+	n1 n2 100
+	n1 n3 100
+	n2 n3 50
+	n1 n4 100
+	n2 n4 50
+	n3 n4 100
+	n2 n1 0
+	n3 n1 0
+	n3 n2 0
+	n4 n1 0
+	n4 n2 0
+	n4 n3 0;
+	
+param c:=
+	n1 n2 300
+	n1 n3 500
+	n2 n3 150
+	n2 n4 200
+	n3 n4 200;
+	
+param t:=
+	n1 n2 10
+	n1 n3 15
+	n2 n3 3
+	n2 n4 5
+	n3 n4 4;
+

@@ -1,0 +1,6 @@
+reset;
+#option solver knitro;
+model 'C:\Users\lckung\Desktop\OR\OR\HW8\hw_2.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW8\hw_2.dat';
+solve;
+display X;

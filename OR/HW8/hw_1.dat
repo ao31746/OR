@@ -1,0 +1,49 @@
+set P:= PROD1 PROD2 PROD3 PROD4 PROD5 PROD6 PROD7; #product sets
+set M:= GR VE HO BO PL;
+
+param s:=0.5;	# storage cost
+param t:=6;	# 6 months
+param tool:= GR 4
+			 VE 2
+			 HO 3
+			 BO 1
+			 PL 1;
+
+param pr:= PROD1 10
+		   PROD2 6
+		   PROD3 8
+		   PROD4 4
+		   PROD5 11
+		   PROD6 9
+		   PROD7 3;
+
+param sp: 		GR	VE	HO	BO	PL	:=
+		PROD1	0.5	0.1	0.2	0.05	0	
+		PROD2	0.7	0.2	0	0.03	0	
+		PROD3	0	0	0.8	0	0.01	
+		PROD4	0	0.3	0	0.07	0	
+		PROD5	0.3	0	0	0.1	0.05	
+		PROD6	0.2	0.6	0	0	0	
+		PROD7	0.5	0	0.6	0.08	0.05	;
+	   	
+param abd =
+		GR 2
+		VE 2
+		HO 3
+		BO 1	
+		PL 1;
+		
+param ml: 	1	2	3	4	5	6:=
+		PROD1	500	600	300	200	0	500
+		PROD2	1000	500	600	300	100	500
+		PROD3	300	200	0	400	500	100
+		PROD4	300	0	0	500	100	300
+		PROD5	800	400	500	200	1000	1100
+		PROD6	200	300	400	0	300	500
+		PROD7	100	150	100	100	0	60;
+	
+
+
+
+
+		

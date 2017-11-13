@@ -1,0 +1,47 @@
+set P:= VEG OIL; #category of vegetable and non-vegetable
+set A[OIL]:= OIL1 OIL2 OIL3; #non-vegetable oils
+set A[VEG]:= VEG1 VEG2; #vegetable oils
+
+param s:=5;
+param t:=6;
+param l:= VEG 200 # production limit
+		  OIL 250;	  
+param: h := #hard
+		VEG VEG1 8.8
+		VEG VEG2 6.1
+		OIL OIL1 2.0
+		OIL OIL2 4.2
+		OIL OIL3 5.0;
+
+param c := #Buying cost
+		VEG	VEG1	1	110
+		VEG	VEG2	1	120
+		OIL	OIL1	1	130
+		OIL	OIL2	1	110
+		OIL	OIL3	1	115
+		VEG	VEG1	2	130
+		VEG	VEG2	2	130
+		OIL	OIL1	2	110
+		OIL	OIL2	2	90
+		OIL	OIL3	2	115
+		VEG	VEG1	3	110
+		VEG	VEG2	3	140
+		OIL	OIL1	3	130
+		OIL	OIL2	3	100
+		OIL	OIL3	3	95
+		VEG	VEG1	4	120
+		VEG	VEG2	4	110
+		OIL	OIL1	4	120
+		OIL	OIL2	4	120
+		OIL	OIL3	4	125
+		VEG	VEG1	5	100
+		VEG	VEG2	5	120
+		OIL	OIL1	5	150
+		OIL	OIL2	5	110
+		OIL	OIL3	5	105
+		VEG	VEG1	6	90
+		VEG	VEG2	6	100
+		OIL	OIL1	6	140
+		OIL	OIL2	6	80
+		OIL	OIL3	6	135;
+		

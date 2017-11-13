@@ -1,0 +1,7 @@
+reset;
+option solver knitro;
+model 'C:\Users\lckung\Desktop\OR\OR\HW8\hw_1.mod';
+data 'C:\Users\lckung\Desktop\OR\OR\HW8\hw_1.dat';
+solve;
+display X;
+display FIXTOOL;

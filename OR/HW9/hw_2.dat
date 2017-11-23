@@ -1,0 +1,29 @@
+set mine:= mine1 mine2 mine3 mine4;
+
+
+param royalty:=
+	mine1 5000000
+	mine2 4000000
+	mine3 4000000
+	mine4 5000000;
+	
+	
+param limit:=
+	mine1 2000000
+	mine2 2500000
+	mine3 1300000
+	mine4 3000000;
+	
+param quanlity:=
+	mine1 1
+	mine2 0.7
+	mine3 1.5
+	mine4 0.5;
+	
+param require:=
+	1 0.9
+	2 0.8
+	3 1.2
+	4 0.6
+	5 1;
+	

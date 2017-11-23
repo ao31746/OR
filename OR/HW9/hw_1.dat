@@ -1,0 +1,54 @@
+set dep:= A B C D E;
+set city:= Bristol Brighton London;
+set link:=
+	A B
+	A C
+	A D
+	A E
+	B C
+	B D
+	B E
+	C D
+	C E
+	D E;
+set clink:=
+	Bristol Bristol
+	Bristol Brighton
+	Bristol London
+	Brighton Brighton
+	Brighton London
+	London London;
+	
+param benefit :=
+	Bristol		A	10
+	Bristol		B	15
+	Bristol		C	10
+	Bristol		D	20
+	Bristol		E	5
+	Brighton	A	10
+	Brighton	B	20
+	Brighton	C	15
+	Brighton	D	15
+	Brighton	E	15
+	London		A	0
+	London		B	0
+	London		C	0
+	London		D	0
+	London		E	0;
+
+	
+param commu:
+		A 	B	C	D	E:=
+	A 	.	0	1	1.5	0
+	B	.	.	1.4	1.2	0
+	C	.	.	.	0	2
+	D	.	.	.	.	0.7
+	E	.	.	.	.	.	;
+
+param cost:
+				Bristol	Brighton London:=
+	Bristol		5		14		 13
+	Brighton	.		2		 9
+	London		.		.		 10;
+	
+
